@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main box */
+.quiz-box {
+    background: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Question */
+#question {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Answer buttons */
+#answers button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    background: white;
+    color: #333; /* ✅ FIXED TEXT COLOR */
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+#answers button:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Selected option */
+.selected {
+    background: #667eea !important;
+    color: white !important;
+}
+
+/* Next button */
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #764ba2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5a3d85;
+}
+
+/* Score */
+#score {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
